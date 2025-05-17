@@ -1,14 +1,12 @@
 {
   "name": "js-6-2",
   "version": "1.0.0",
-  "main": "index.js",
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "source": "src/index.html"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -23,6 +21,7 @@
   "homepage": "https://github.com/Kirill1810/js-6-2#readme",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.15.0"
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.15.1"
   }
 }
